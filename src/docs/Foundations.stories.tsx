@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
 // Un composant fantôme pour accrocher la documentation Storybook
