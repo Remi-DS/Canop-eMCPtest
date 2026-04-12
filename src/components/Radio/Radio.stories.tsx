@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Radio } from './Radio';
 
 const meta = {
-  title: 'Atomes/Radio',
+  title: 'Atoms/Radio',
   component: Radio,
   tags: ['autodocs'],
   argTypes: {

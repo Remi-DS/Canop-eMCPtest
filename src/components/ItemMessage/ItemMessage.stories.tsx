@@ -4,7 +4,7 @@ import './ItemMessage.css'; // S'assure que les variables CSS sont chargées
 
 // Configuration globale pour le composant dans Storybook
 const meta = {
-  title: 'Atomes/ItemMessage',
+  title: 'Atoms/ItemMessage',
   component: ItemMessage,
   // Le tag 'autodocs' permet à Storybook de générer automatiquement sa documentation
   tags: ['autodocs'],

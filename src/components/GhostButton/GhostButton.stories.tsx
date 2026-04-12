@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { GhostButton } from './GhostButton';
 
 const meta: Meta<typeof GhostButton> = {
-  title: 'Actions/Ghost Button',
+  title: 'Atoms/Actions/Ghost Button',
   component: GhostButton,
   tags: ['autodocs'],
   argTypes: {
