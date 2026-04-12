@@ -1,0 +1,79 @@
+:root {
+  --atomes-checkbox-border-unselected-prospect: #5959b6;
+  --atomes-checkbox-border-unselected-client: #999999;
+  --atomes-checkbox-border-hover: #00008f;
+  --atomes-checkbox-bg-selected: #00008f;
+  --atomes-checkbox-border-selected: #00008f;
+  --atomes-checkbox-border-error: #e50000;
+  
+  --atomes-checkbox-bg-white: #ffffff;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: var(--atomes-checkbox-bg-white);
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* Themes (Border Radius varies between Prospect and Client) */
+.checkbox-container.prospect {
+  border-radius: 6px;
+}
+.checkbox-container.client {
+  border-radius: 4px;
+}
+
+/* States */
+.checkbox-container.unselected.prospect {
+  border: 1px solid var(--atomes-checkbox-border-unselected-prospect);
+}
+.checkbox-container.unselected.client {
+  border: 1px solid var(--atomes-checkbox-border-unselected-client);
+}
+
+.checkbox-container.hover,
+.checkbox-container.unselected:hover {
+  border: 2px solid var(--atomes-checkbox-border-hover);
+}
+
+/* Selected */
+.checkbox-container.selected {
+  border: 2px solid var(--atomes-checkbox-border-selected);
+  background: var(--atomes-checkbox-bg-selected);
+}
+.checkbox-container.client.selected {
+  border-width: 1px; /* Figma specs indicate a 1px border for client selected state */
+}
+
+/* Error States */
+.checkbox-container.error {
+  border: 2px solid var(--atomes-checkbox-border-error);
+}
+
+.checkbox-container.hover_error,
+.checkbox-container.error:hover {
+  border: 3px solid var(--atomes-checkbox-border-error);
+}
+
+/* SVG Icon alignment */
+.checkbox-icon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+}
+.checkbox-icon svg {
+  width: 100%;
+  height: 100%;
+}

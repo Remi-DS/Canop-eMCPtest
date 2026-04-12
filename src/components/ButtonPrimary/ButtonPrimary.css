@@ -1,0 +1,205 @@
+/* =====================
+   Button Primary
+   Variables CSS Figma
+   ===================== */
+
+/* ---- Base ---- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  transition: background-color 0.15s ease;
+  padding: 12px 24px;
+}
+
+/* ---- Device: Desktop ---- */
+.btn-primary--desk {
+  min-height: 56px;
+  min-width: 144px;
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* ---- Device: Mobile ---- */
+.btn-primary--mob {
+  min-height: 48px;
+  min-width: 144px;
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* ========================
+   PROSPECT — forme pilule
+   ======================== */
+.btn-primary--prospect {
+  border-radius: 64px;
+}
+
+/* PROSPECT / DEFAULT / default */
+.btn-primary--prospect.btn-primary--style-default.btn-primary--default {
+  background: var(--actions\/button-primary\/primary\/default\/background, #00008f);
+  color: var(--actions\/button-primary\/primary\/default\/text, #ffffff);
+}
+
+/* PROSPECT / DEFAULT / hover */
+.btn-primary--prospect.btn-primary--style-default.btn-primary--hover {
+  background: var(--actions\/button-primary\/primary\/hover\/background, #000072);
+  color: var(--actions\/button-primary\/primary\/hover\/text, #ffffff);
+}
+
+/* PROSPECT / DEFAULT / active */
+.btn-primary--prospect.btn-primary--style-default.btn-primary--active {
+  background: var(--actions\/button-primary\/primary\/active\/background, #3333a5);
+  color: var(--actions\/button-primary\/primary\/active\/text, #ffffff);
+}
+
+/* PROSPECT / DEFAULT / disabled */
+.btn-primary--prospect.btn-primary--style-default.btn-primary--disabled {
+  background: var(--actions\/button-primary\/primary\/disabled\/background, #f5f5f5);
+  color: var(--actions\/button-primary\/primary\/disabled\/text, #999999);
+  cursor: not-allowed;
+}
+
+/* PROSPECT / BUSINESS / default */
+.btn-primary--prospect.btn-primary--style-business.btn-primary--default {
+  background: var(--actions\/button-primary\/business\/default\/background, #c94e14);
+  color: var(--actions\/button-primary\/business\/default\/text, #ffffff);
+}
+
+/* PROSPECT / BUSINESS / hover */
+.btn-primary--prospect.btn-primary--style-business.btn-primary--hover {
+  background: var(--actions\/button-primary\/business\/hover\/background, #bf4a13);
+  color: var(--actions\/button-primary\/business\/hover\/text, #ffffff);
+}
+
+/* PROSPECT / BUSINESS / active */
+.btn-primary--prospect.btn-primary--style-business.btn-primary--active {
+  background: var(--actions\/button-primary\/business\/active\/background, #d47143);
+  color: var(--actions\/button-primary\/business\/active\/text, #ffffff);
+}
+
+/* PROSPECT / BUSINESS / disabled */
+.btn-primary--prospect.btn-primary--style-business.btn-primary--disabled {
+  background: var(--actions\/button-primary\/business\/disabled\/background, #f5f5f5);
+  color: #999999;
+  cursor: not-allowed;
+}
+
+/* PROSPECT / INVERSE / default */
+.btn-primary--prospect.btn-primary--style-inverse.btn-primary--default {
+  background: var(--actions\/button-primary\/inverse\/default\/background, #ffffff);
+  color: var(--actions\/button-primary\/inverse\/default\/text, #00008f);
+}
+
+/* PROSPECT / INVERSE / hover */
+.btn-primary--prospect.btn-primary--style-inverse.btn-primary--hover {
+  background: var(--actions\/button-primary\/inverse\/hover\/background, #e2e2e2);
+  color: var(--actions\/button-primary\/inverse\/hover\/text, #000072);
+}
+
+/* PROSPECT / INVERSE / active */
+.btn-primary--prospect.btn-primary--style-inverse.btn-primary--active {
+  background: var(--actions\/button-primary\/inverse\/active\/background, #f5f5f5);
+  color: var(--actions\/button-primary\/inverse\/active\/text, #3333a5);
+}
+
+/* PROSPECT / INVERSE / disabled */
+.btn-primary--prospect.btn-primary--style-inverse.btn-primary--disabled {
+  background: var(--actions\/button-primary\/inverse\/disabled\/background, #f5f5f5);
+  color: var(--actions\/button-primary\/inverse\/disabled\/text, #999999);
+  cursor: not-allowed;
+}
+
+/* ========================
+   CLIENT — forme carrée
+   ======================== */
+.btn-primary--client {
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+.btn-primary--client.btn-primary--mob {
+  min-width: 125px;
+  padding: 16px;
+}
+
+/* CLIENT / DEFAULT / default */
+.btn-primary--client.btn-primary--style-default.btn-primary--default {
+  background: var(--actions\/button-primary\/primary\/default\/background, #00008f);
+  color: var(--actions\/button-primary\/primary\/default\/text, #ffffff);
+}
+
+/* CLIENT / DEFAULT / hover */
+.btn-primary--client.btn-primary--style-default.btn-primary--hover {
+  background: var(--actions\/button-primary\/primary\/hover\/background, #000072);
+  color: var(--actions\/button-primary\/primary\/hover\/text, #ffffff);
+}
+
+/* CLIENT / DEFAULT / active */
+.btn-primary--client.btn-primary--style-default.btn-primary--active {
+  background: var(--actions\/button-primary\/primary\/active\/background, #3333a5);
+  color: var(--actions\/button-primary\/primary\/active\/text, #ffffff);
+}
+
+/* CLIENT / DEFAULT / disabled */
+.btn-primary--client.btn-primary--style-default.btn-primary--disabled {
+  background: var(--actions\/button-primary\/primary\/disabled\/background, #f5f5f5);
+  color: var(--actions\/button-primary\/primary\/disabled\/text, #999999);
+  cursor: not-allowed;
+}
+
+/* CLIENT / INVERSE / default */
+.btn-primary--client.btn-primary--style-inverse.btn-primary--default {
+  background: #ffffff;
+  color: #00008f;
+}
+
+/* CLIENT / INVERSE / hover */
+.btn-primary--client.btn-primary--style-inverse.btn-primary--hover {
+  background: #e2e2e2;
+  color: #000072;
+}
+
+/* CLIENT / INVERSE / active */
+.btn-primary--client.btn-primary--style-inverse.btn-primary--active {
+  background: #f5f5f5;
+  color: #3333a5;
+}
+
+/* CLIENT / INVERSE / disabled */
+.btn-primary--client.btn-primary--style-inverse.btn-primary--disabled {
+  background: #f5f5f5;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+/* Icon & Spinner */
+.btn-primary__icon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.btn-primary__spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #cccccc;
+  border-top-color: #00008f;
+  border-radius: 50%;
+  animation: btn-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}

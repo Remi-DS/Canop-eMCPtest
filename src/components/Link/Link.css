@@ -1,0 +1,103 @@
+/* =====================
+   Link
+   ===================== */
+
+.ds-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+/* Desktop */
+.ds-link--desk {
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 24px;
+}
+
+/* Mobile */
+.ds-link--mob {
+  font-size: 14px;
+  line-height: 20px;
+  min-height: 20px;
+}
+
+/* Client desktop override */
+.ds-link--client.ds-link--desk {
+  font-size: 18px;
+  line-height: 20px;
+}
+.ds-link--client.ds-link--mob {
+  font-size: 16px;
+}
+
+/* ========================
+   UNDERLINE  (SemiBold)
+   ======================== */
+.ds-link--style-underline {
+  font-weight: 600;
+}
+.ds-link--style-underline.ds-link--default {
+  color: var(--actions\/link\/underline\/text-default, #00008f);
+}
+.ds-link--style-underline.ds-link--hover {
+  color: var(--actions\/link\/underline\/text-hover, #000072);
+}
+.ds-link--style-underline.ds-link--active {
+  color: var(--actions\/link\/underline\/text-active, #3333a5);
+}
+
+/* ========================
+   DEFAULT   (SemiBold + icon)
+   ======================== */
+.ds-link--style-default {
+  font-weight: 600;
+}
+.ds-link--style-default.ds-link--default {
+  color: var(--actions\/link\/default\/text-default, #00008f);
+}
+.ds-link--style-default.ds-link--hover {
+  color: var(--actions\/link\/default\/text-hover, #000072);
+}
+.ds-link--style-default.ds-link--active {
+  color: var(--actions\/link\/default\/text-active, #3333a5);
+}
+
+/* ========================
+   INVERSE  (Regular)
+   ======================== */
+.ds-link--style-inverse {
+  font-weight: 400;
+}
+.ds-link--style-inverse.ds-link--default {
+  color: var(--actions\/link\/inverse\/text-default, #ffffff);
+}
+.ds-link--style-inverse.ds-link--hover {
+  color: var(--actions\/link\/inverse\/text-hover, #ffffff);
+}
+.ds-link--style-inverse.ds-link--active {
+  color: var(--actions\/link\/inverse\/text-active, #ffffff);
+}
+
+/* Icon markers */
+.ds-link__icon {
+  display: inline-flex;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.ds-link__icon--right::after {
+  content: '↗';
+}
+.ds-link__icon--left::before {
+  content: '←';
+}

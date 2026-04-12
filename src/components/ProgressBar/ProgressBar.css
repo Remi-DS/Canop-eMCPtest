@@ -1,0 +1,45 @@
+:root {
+  --progress-bar-bg: #e2e2e2;
+  --progress-bar-fill-prospect: #00008f;
+  --progress-bar-fill-client: #00008f;
+  --progress-bar-text: #333333;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.progress-bar__track {
+  flex: 1;
+  height: 6px;
+  min-height: 1px;
+  position: relative;
+  background: var(--progress-bar-bg);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar__fill {
+  position: absolute;
+  inset: 0;
+  right: auto;
+  background: var(--progress-bar-fill-prospect);
+  border-radius: 4px;
+  height: 100%;
+}
+
+.progress-bar--client .progress-bar__fill {
+  background: var(--progress-bar-fill-client);
+}
+
+.progress-bar__label {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--progress-bar-text);
+  white-space: nowrap;
+  flex-shrink: 0;
+}

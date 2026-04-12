@@ -1,0 +1,328 @@
+/* ========================
+   CSS Design Tokens
+======================== */
+:root {
+  --color-primary: #00008f;
+  --color-text-dark: #333333;
+  --color-text-grey: #5c5c5c;
+  --color-border-light: #cccce9;
+  --color-radio-border: #5959b6;
+  --color-progress-bg: #e2e2e2;
+  --color-message-bg: #f5f5f5;
+
+  --font-body: 'Source Sans Pro', sans-serif;
+  --font-heading: 'Publico Headline', serif;
+}
+
+/* ========================
+   HEADER
+======================== */
+.page-header {
+  width: 100%;
+  background: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid var(--color-border-light);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.page-header__content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.page-header__title {
+  flex: 1;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.25;
+  color: var(--color-text-dark);
+  text-align: right;
+}
+
+/* ========================
+   PAGE LAYOUT
+======================== */
+.page-devis {
+  background: white;
+  min-height: 100vh;
+  padding-top: 81px; /* header height */
+}
+
+.page-devis__container {
+  max-width: 686px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+/* ========================
+   STEPPER
+======================== */
+.stepper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.stepper__labels {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stepper__subtitle {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.stepper__title {
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.stepper__mention {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-text-grey);
+  margin: 0;
+}
+
+/* Progress bar group */
+.progress-bar-group {
+  display: flex;
+  gap: 8px;
+  height: 6px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.progress-bar-item {
+  flex: 1;
+  height: 6px;
+  position: relative;
+  border-radius: 4px;
+  background: var(--color-progress-bg);
+}
+
+.progress-bar-item__fill {
+  position: absolute;
+  inset: 0;
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+
+/* ========================
+   INFO MESSAGE
+======================== */
+.info-message {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--color-message-bg);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 48px;
+}
+
+.info-message__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.info-message__text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--color-text-grey);
+  margin: 0;
+}
+
+/* ========================
+   QUESTION SECTION
+======================== */
+.question-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.question-section__title {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+/* ========================
+   CARD RADIO GROUP
+======================== */
+.card-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.card-radio {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: white;
+  border: 1px solid var(--color-radio-border);
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: none;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.card-radio:hover {
+  border-color: var(--color-primary);
+  border-width: 2px;
+}
+
+.card-radio.is-selected {
+  border-color: var(--color-primary);
+  border-width: 2px;
+}
+
+.card-radio__radio {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--color-radio-border);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.card-radio.is-selected .card-radio__radio {
+  border: 2px solid var(--color-primary);
+}
+
+.card-radio__radio-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  display: none;
+}
+
+.card-radio.is-selected .card-radio__radio-dot {
+  display: block;
+}
+
+.card-radio__label {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--color-primary);
+  flex: 1;
+  margin: 0;
+}
+
+/* ========================
+   BUTTON GROUP
+======================== */
+.button-group {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: white;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  border: none;
+  border-radius: 64px;
+  padding: 12px 24px;
+  min-width: 144px;
+  min-height: 56px;
+  cursor: pointer;
+  width: 242px;
+}
+
+.btn-primary:hover {
+  background: #000070;
+}
+
+/* ========================
+   RESPONSIVE - MOBILE
+======================== */
+@media (max-width: 767px) {
+  .page-header__content {
+    padding: 12px 16px;
+  }
+
+  .page-header__title {
+    font-size: 20px;
+  }
+
+  .page-devis__container {
+    padding: 24px 16px 48px;
+  }
+
+  .stepper__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .question-section__title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .card-radio__label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .button-group {
+    width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+:root {
+  --tag-border-radius: 4px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: var(--tag-border-radius);
+  padding: 2px 8px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Desktop */
+.tag--desk {
+  font-size: 16px;
+  line-height: 20px;
+  height: 24px;
+}
+
+/* Mobile */
+.tag--mob {
+  font-size: 14px;
+  line-height: 18px;
+  height: 22px;
+}

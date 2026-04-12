@@ -1,0 +1,176 @@
+/* ==========================================================================
+   DESIGN SYSTEM FOUNDATIONS : VARIABLES
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+  /* =====================
+     TYPOGRAPHIE
+     ===================== */
+  --font-family-primary: 'Source Sans Pro', system-ui, -apple-system, sans-serif;
+  
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 24px;
+
+  /* =====================
+     COULEURS PRIMAIRES
+     ===================== */
+  /* AXA Bleu */
+  --color-primary-base: #00008f;
+  --color-primary-hover: #000072;
+  --color-primary-active: #3333a5;
+
+  /* AXA Business (Orange/Rouge) */
+  --color-business-base: #c94e14;
+  --color-business-hover: #bf4a13;
+  --color-business-active: #d47143;
+
+  /* =====================
+     COULEURS NEUTRES
+     ===================== */
+  --color-neutral-white: #ffffff;
+  --color-neutral-black: #000000;
+  --color-text-main: #333333;
+  
+  /* Palette de gris (Disabled / Backgrounds / Borders) */
+  --color-gray-100: #f5f5f5; /* Disabled background */
+  --color-gray-200: #ebebf6; /* Ghost/Tertiary background */
+  --color-gray-300: #e5e5f4; /* Hover background alt */
+  --color-gray-400: #e2e2e2; /* Hover background inverse */
+  --color-gray-500: #cccccc; /* Bordures / Spinners */
+  --color-gray-600: #999999; /* Texte désactivé */
+
+  /* Bleu très clair */
+  --color-blue-light: #f5f5fb;
+
+  /* =====================
+     ÉTATS & SEMANTIQUE
+     ===================== */
+  --color-error-base: #c91432;
+  --color-error-hover: #a51029;
+  --color-success-base: #14c95a;
+  
+  /* =====================
+     OMBRES ET RADIUS
+     ===================== */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-pill: 64px;
+  --radius-full: 50%;
+
+  /* =====================
+     MAPPING VARIABLES FIGMA (Actions)
+     (Correspondance avec les fallbacks des composants)
+     ===================== */
+  
+  /* Button Primary */
+  --actions\/button-primary\/primary\/default\/background: var(--color-primary-base);
+  --actions\/button-primary\/primary\/default\/text: var(--color-neutral-white);
+  --actions\/button-primary\/primary\/hover\/background: var(--color-primary-hover);
+  --actions\/button-primary\/primary\/hover\/text: var(--color-neutral-white);
+  --actions\/button-primary\/primary\/active\/background: var(--color-primary-active);
+  --actions\/button-primary\/primary\/active\/text: var(--color-neutral-white);
+  --actions\/button-primary\/primary\/disabled\/background: var(--color-gray-100);
+  --actions\/button-primary\/primary\/disabled\/text: var(--color-gray-600);
+
+  --actions\/button-primary\/business\/default\/background: var(--color-business-base);
+  --actions\/button-primary\/business\/default\/text: var(--color-neutral-white);
+  --actions\/button-primary\/business\/hover\/background: var(--color-business-hover);
+  --actions\/button-primary\/business\/hover\/text: var(--color-neutral-white);
+  --actions\/button-primary\/business\/active\/background: var(--color-business-active);
+  --actions\/button-primary\/business\/active\/text: var(--color-neutral-white);
+  --actions\/button-primary\/business\/disabled\/background: var(--color-gray-100);
+
+  --actions\/button-primary\/inverse\/default\/background: var(--color-neutral-white);
+  --actions\/button-primary\/inverse\/default\/text: var(--color-primary-base);
+  --actions\/button-primary\/inverse\/hover\/background: var(--color-gray-400);
+  --actions\/button-primary\/inverse\/hover\/text: var(--color-primary-hover);
+  --actions\/button-primary\/inverse\/active\/background: var(--color-gray-100);
+  --actions\/button-primary\/inverse\/active\/text: var(--color-primary-active);
+  --actions\/button-primary\/inverse\/disabled\/background: var(--color-gray-100);
+  --actions\/button-primary\/inverse\/disabled\/text: var(--color-gray-600);
+
+  /* Button Secondary */
+  --actions\/button-secondary\/default\/default\/background: var(--color-neutral-white);
+  --actions\/button-secondary\/default\/default\/border: var(--color-primary-base);
+  --actions\/button-secondary\/default\/default\/text: var(--color-primary-base);
+  
+  --actions\/button-secondary\/default\/hover\/background: var(--color-primary-hover);
+  --actions\/button-secondary\/default\/hover\/border: var(--color-primary-hover);
+  --actions\/button-secondary\/default\/hover\/text: var(--color-neutral-white);
+  
+  --actions\/button-secondary\/default\/active\/background: var(--color-primary-active);
+  --actions\/button-secondary\/default\/active\/text: var(--color-neutral-white);
+  
+  --actions\/button-secondary\/default\/disabled\/background: var(--color-gray-100);
+  --actions\/button-secondary\/default\/disabled\/text: var(--color-gray-600);
+
+  --actions\/button-secondary\/inverse\/default\/border: var(--color-neutral-white);
+  --actions\/button-secondary\/inverse\/default\/text: var(--color-neutral-white);
+  --actions\/button-secondary\/inverse\/hover\/border: var(--color-gray-400);
+  --actions\/button-secondary\/inverse\/hover\/text: var(--color-primary-hover);
+  --actions\/button-secondary\/inverse\/active\/background: var(--color-gray-100);
+  --actions\/button-secondary\/inverse\/active\/border: var(--color-gray-100);
+  --actions\/button-secondary\/inverse\/active\/text: var(--color-primary-active);
+  --actions\/button-secondary\/inverse\/disabled\/background: var(--color-gray-100);
+
+  /* Button Tertiary */
+  --actions\/button-tertiary\/default\/background: var(--color-gray-200);
+  --actions\/button-tertiary\/default\/text: var(--color-primary-base);
+  --actions\/button-tertiary\/hover\/background: var(--color-primary-hover);
+  --actions\/button-tertiary\/hover\/text: var(--color-neutral-white);
+  --actions\/button-tertiary\/active\/background: var(--color-primary-active);
+  --actions\/button-tertiary\/active\/text: var(--color-neutral-white);
+  --actions\/button-tertiary\/disabled\/background: var(--color-gray-400);
+  --actions\/button-tertiary\/disabled\/text: var(--color-gray-600);
+
+  /* Link */
+  --actions\/link\/default\/text-default: var(--color-primary-base);
+  --actions\/link\/default\/text-hover: var(--color-primary-hover);
+  --actions\/link\/default\/text-active: var(--color-primary-active);
+  
+  --actions\/link\/underline\/text-default: var(--color-primary-base);
+  --actions\/link\/underline\/text-hover: var(--color-primary-hover);
+  --actions\/link\/underline\/text-active: var(--color-primary-active);
+
+  --actions\/link\/inverse\/text-default: var(--color-neutral-white);
+  --actions\/link\/inverse\/text-hover: var(--color-neutral-white);
+  --actions\/link\/inverse\/text-active: var(--color-neutral-white);
+
+  /* Icons */
+  --actions\/icon\/prospect\/default\/background: var(--color-primary-base);
+  --actions\/icon\/prospect\/hover\/background: var(--color-primary-hover);
+  --actions\/icon\/prospect\/active\/background: var(--color-primary-active);
+  
+  --actions\/icon\/client\/default\/background: var(--color-primary-base);
+}
+
+/* ==========================================================================
+   RESET & DEFAULTS
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  color: var(--color-text-main);
+  background-color: var(--color-neutral-white);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-semibold);
+  margin-top: 0;
+}

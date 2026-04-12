@@ -1,0 +1,108 @@
+/* =====================
+   Button Tertiary
+   ===================== */
+
+.btn-tertiary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: background-color 0.15s;
+}
+
+/* Device */
+.btn-tertiary--desk {
+  min-height: 56px;
+  min-width: 144px;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 12px 24px;
+}
+
+.btn-tertiary--mob {
+  min-height: 48px;
+  min-width: 144px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 16px;
+  gap: 8px;
+}
+
+/* ========================
+   PROSPECT — pilule
+   ======================== */
+.btn-tertiary--prospect {
+  border-radius: 64px;
+}
+
+.btn-tertiary--prospect.btn-tertiary--default {
+  background: var(--actions\/button-tertiary\/default\/background, #ebebf6);
+  color: var(--actions\/button-tertiary\/default\/text, #00008f);
+}
+.btn-tertiary--prospect.btn-tertiary--hover {
+  background: var(--actions\/button-tertiary\/hover\/background, #000072);
+  color: var(--actions\/button-tertiary\/hover\/text, #ffffff);
+}
+.btn-tertiary--prospect.btn-tertiary--active {
+  background: var(--actions\/button-tertiary\/active\/background, #3333a5);
+  color: var(--actions\/button-tertiary\/active\/text, #ffffff);
+}
+.btn-tertiary--prospect.btn-tertiary--disabled {
+  background: var(--actions\/button-tertiary\/disabled\/background, #e2e2e2);
+  color: var(--actions\/button-tertiary\/disabled\/text, #999999);
+  cursor: not-allowed;
+}
+
+/* ========================
+   CLIENT — carré
+   ======================== */
+.btn-tertiary--client {
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+.btn-tertiary--client.btn-tertiary--mob {
+  min-width: 180px;
+  padding: 16px;
+}
+
+.btn-tertiary--client.btn-tertiary--default {
+  background: var(--actions\/button-tertiary\/default\/background, #ebebf6);
+  color: var(--actions\/button-tertiary\/default\/text, #00008f);
+}
+.btn-tertiary--client.btn-tertiary--hover {
+  background: var(--actions\/button-tertiary\/hover\/background, #e5e5f4);
+  color: var(--actions\/button-tertiary\/hover\/text, #00008f);
+}
+.btn-tertiary--client.btn-tertiary--active {
+  background: var(--actions\/button-tertiary\/active\/background, #f5f5fb);
+  color: var(--actions\/button-tertiary\/active\/text, #00008f);
+}
+.btn-tertiary--client.btn-tertiary--disabled {
+  background: var(--actions\/button-tertiary\/disabled\/background, #f5f5f5);
+  color: var(--actions\/button-tertiary\/disabled\/text, #999999);
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.btn-tertiary__spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #cccccc;
+  border-top-color: #00008f;
+  border-radius: 50%;
+  animation: btn-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,68 @@
+/* =====================
+   Ghost Button
+   ===================== */
+
+.ghost-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* Desktop */
+.ghost-btn--desk {
+  font-size: 16px;
+  line-height: 20px;
+  height: 24px;
+}
+
+/* Mobile */
+.ghost-btn--mob {
+  font-size: 14px;
+  line-height: 20px;
+  height: 24px;
+}
+
+/* ========================
+   PROSPECT
+   ======================== */
+.ghost-btn--prospect.ghost-btn--default {
+  color: var(--actions\/link\/default\/text-default, #00008f);
+}
+.ghost-btn--prospect.ghost-btn--hover {
+  color: var(--actions\/link\/default\/text-hover, #000072);
+  cursor: pointer;
+}
+.ghost-btn--prospect.ghost-btn--active {
+  color: var(--actions\/link\/default\/text-active, #3333a5);
+}
+
+/* ========================
+   CLIENT
+   ======================== */
+.ghost-btn--client.ghost-btn--default {
+  color: var(--actions\/link\/default\/text-default, #00008f);
+}
+.ghost-btn--client.ghost-btn--hover {
+  color: var(--actions\/link\/default\/text-hover, #000072);
+  cursor: pointer;
+}
+.ghost-btn--client.ghost-btn--active {
+  color: var(--actions\/link\/default\/text-active, #3333a5);
+}
+
+.ghost-btn__icon {
+  font-size: 12px;
+  flex-shrink: 0;
+}

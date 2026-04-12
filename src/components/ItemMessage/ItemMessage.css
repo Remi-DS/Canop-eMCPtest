@@ -1,0 +1,86 @@
+/* Variables for the Item Message Atom */
+:root {
+  /* Typography Body 3 (Desktop) */
+  --body-3-font-family: 'Source Sans Pro', sans-serif;
+  --body-3-font-size: 16px;
+  --body-3-line-height: 20px;
+  --body-3-font-weight: 400;
+
+  /* Typography Body 4 (Mobile) */
+  --body-4-font-family: 'Source Sans Pro', sans-serif;
+  --body-4-font-size: 14px;
+  --body-4-line-height: 18px;
+  --body-4-font-weight: 400;
+
+  /* Semantic Colors from Figma */
+  --atomes-item-message-success-text: #188038;
+  --atomes-item-message-error-text: #e50000;
+  --atomes-item-message-warning-text: #bf4a13;
+}
+
+/* Base Component Styling */
+.item-message-container {
+  display: flex;
+  font-family: var(--body-3-font-family);
+  gap: 8px; /* Added slight gap for breathing room between icon and text */
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+/* Text Base Styling */
+.item-message-text {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Modifier: Desktop Typography */
+.item-message-container.desk .item-message-text {
+  font-family: var(--body-3-font-family);
+  font-size: var(--body-3-font-size);
+  line-height: var(--body-3-line-height);
+  font-weight: var(--body-3-font-weight);
+}
+
+/* Modifier: Mobile Typography */
+.item-message-container.mob .item-message-text {
+  font-family: var(--body-4-font-family);
+  font-size: var(--body-4-font-size);
+  line-height: var(--body-4-line-height);
+  font-weight: var(--body-4-font-weight);
+}
+
+/* Modifier: Colors corresponding to Status */
+.item-message-container.sucess {
+  color: var(--atomes-item-message-success-text);
+}
+
+.item-message-container.error {
+  color: var(--atomes-item-message-error-text);
+}
+
+.item-message-container.warning {
+  color: var(--atomes-item-message-warning-text);
+}
+
+/* Icons */
+.item-message-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-message-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Specific alignments based on the design */
+.item-message-container.client {
+  align-items: center; /* Client theme items are centered vertically */
+}

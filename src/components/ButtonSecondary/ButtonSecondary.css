@@ -1,0 +1,164 @@
+/* =====================
+   Button Secondary
+   ===================== */
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  background: transparent;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+/* Device */
+.btn-secondary--desk {
+  min-height: 56px;
+  min-width: 144px;
+  max-width: 400px;
+  font-size: 18px;
+  line-height: 23px;
+  padding: 12px 24px;
+}
+
+.btn-secondary--mob {
+  min-height: 48px;
+  min-width: 144px;
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 12px 16px;
+  gap: 8px;
+}
+
+/* ========================
+   PROSPECT — pilule
+   ======================== */
+.btn-secondary--prospect {
+  border-radius: 64px;
+}
+
+/* PROSPECT / DEFAULT */
+.btn-secondary--prospect.btn-secondary--style-default.btn-secondary--default {
+  background: var(--actions\/button-secondary\/default\/default\/background, #ffffff);
+  border: 2px solid var(--actions\/button-secondary\/default\/default\/border, #00008f);
+  color: var(--actions\/button-secondary\/default\/default\/text, #00008f);
+}
+.btn-secondary--prospect.btn-secondary--style-default.btn-secondary--hover {
+  background: var(--actions\/button-secondary\/default\/hover\/background, #000072);
+  border: 1px solid var(--actions\/button-secondary\/default\/hover\/border, #000072);
+  color: var(--actions\/button-secondary\/default\/hover\/text, #ffffff);
+}
+.btn-secondary--prospect.btn-secondary--style-default.btn-secondary--active {
+  background: var(--actions\/button-secondary\/default\/active\/background, #3333a5);
+  border: none;
+  color: var(--actions\/button-secondary\/default\/active\/text, #ffffff);
+}
+.btn-secondary--prospect.btn-secondary--style-default.btn-secondary--disabled {
+  background: var(--actions\/button-secondary\/default\/disabled\/background, #f5f5f5);
+  border: none;
+  color: var(--actions\/button-secondary\/default\/disabled\/text, #999999);
+  cursor: not-allowed;
+}
+
+/* PROSPECT / INVERSE */
+.btn-secondary--prospect.btn-secondary--style-inverse.btn-secondary--default {
+  border: 2px solid var(--actions\/button-secondary\/inverse\/default\/border, #ffffff);
+  color: var(--actions\/button-secondary\/inverse\/default\/text, #ffffff);
+}
+.btn-secondary--prospect.btn-secondary--style-inverse.btn-secondary--hover {
+  background: var(--actions\/button-secondary\/inverse\/hover\/border, #e2e2e2);
+  border: none;
+  color: var(--actions\/button-secondary\/inverse\/hover\/text, #000072);
+}
+.btn-secondary--prospect.btn-secondary--style-inverse.btn-secondary--active {
+  background: var(--actions\/button-secondary\/inverse\/active\/background, #f5f5f5);
+  border: 2px solid var(--actions\/button-secondary\/inverse\/active\/border, #f5f5f5);
+  color: var(--actions\/button-secondary\/inverse\/active\/text, #3333a5);
+}
+.btn-secondary--prospect.btn-secondary--style-inverse.btn-secondary--disabled {
+  background: var(--actions\/button-secondary\/inverse\/disabled\/background, #f5f5f5);
+  border: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+/* ========================
+   CLIENT — carré
+   ======================== */
+.btn-secondary--client {
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+.btn-secondary--client.btn-secondary--mob {
+  min-width: 120px;
+  padding: 16px;
+}
+
+/* CLIENT / DEFAULT */
+.btn-secondary--client.btn-secondary--style-default.btn-secondary--default {
+  background: var(--actions\/button-secondary\/default\/default\/background, #ffffff);
+  border: 1px solid var(--actions\/button-secondary\/default\/default\/border, #00008f);
+  color: var(--actions\/button-secondary\/default\/default\/text, #00008f);
+}
+.btn-secondary--client.btn-secondary--style-default.btn-secondary--hover {
+  background: var(--actions\/button-secondary\/default\/hover\/background, #ffffff);
+  border: 2px solid var(--actions\/button-secondary\/default\/hover\/border, #000072);
+  color: var(--actions\/button-secondary\/default\/hover\/text, #000072);
+}
+.btn-secondary--client.btn-secondary--style-default.btn-secondary--active {
+  background: var(--actions\/button-secondary\/default\/active\/background, #f5f5fb);
+  border: 2px solid var(--actions\/button-secondary\/default\/hover\/border, #000072);
+  color: var(--actions\/button-secondary\/default\/active\/text, #000072);
+}
+.btn-secondary--client.btn-secondary--style-default.btn-secondary--disabled {
+  background: var(--actions\/button-secondary\/default\/disabled\/background, #f5f5f5);
+  border: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+/* CLIENT / INVERSE */
+.btn-secondary--client.btn-secondary--style-inverse.btn-secondary--default {
+  border: 1px solid var(--actions\/button-secondary\/inverse\/default\/border, #ffffff);
+  color: #ffffff;
+}
+.btn-secondary--client.btn-secondary--style-inverse.btn-secondary--hover {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #000072;
+}
+.btn-secondary--client.btn-secondary--style-inverse.btn-secondary--active {
+  background: #f5f5fb;
+  border: 2px solid #ffffff;
+  color: #3333a5;
+}
+.btn-secondary--client.btn-secondary--style-inverse.btn-secondary--disabled {
+  background: #f5f5f5;
+  border: none;
+  color: #999999;
+  cursor: not-allowed;
+}
+
+/* Spinner */
+.btn-secondary__spinner {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #cccccc;
+  border-top-color: #00008f;
+  border-radius: 50%;
+  animation: btn-spin 0.7s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes btn-spin {
+  to { transform: rotate(360deg); }
+}
