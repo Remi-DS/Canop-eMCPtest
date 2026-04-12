@@ -1,0 +1,55 @@
+/* =====================
+   Level Bar
+   ===================== */
+
+.level-bar {
+  display: inline-block;
+  width: 98px; /* Standard width as per Figma */
+  border-radius: var(--radius-pill, 64px);
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Cursors */
+.level-bar[role="button"] {
+  cursor: pointer;
+}
+
+/* ========================
+   DEVICE SIZES
+   ======================== */
+.level-bar--desk {
+  height: 16px;
+}
+
+.level-bar--mob {
+  height: 24px;
+}
+
+/* ========================
+   STATES
+   ======================== */
+
+/* Unselected: 1px solid border */
+.level-bar--unselected {
+  border: 1px solid var(--color-primary-base, #00008f);
+  background-color: transparent;
+}
+
+/* Selected: Filled */
+.level-bar--selected {
+  border: none;
+  background-color: var(--color-primary-base, #00008f);
+}
+
+/* Hovered: 2px solid border */
+.level-bar--hovered {
+  border: 2px solid var(--color-primary-base, #00008f);
+  background-color: transparent;
+}
+
+/* Auto-hover if clickable */
+.level-bar[role="button"]:not(.level-bar--selected):hover {
+  border: 2px solid var(--color-primary-base, #00008f);
+  background-color: transparent;
+}
