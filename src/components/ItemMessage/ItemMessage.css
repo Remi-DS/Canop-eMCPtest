@@ -1,13 +1,13 @@
 /* Variables for the Item Message Atom */
 :root {
   /* Typography Body 3 (Desktop) */
-  --body-3-font-family: 'Source Sans Pro', sans-serif;
+  --body-3-font-family: var(--font-family-primary);
   --body-3-font-size: 16px;
   --body-3-line-height: 20px;
   --body-3-font-weight: 400;
 
   /* Typography Body 4 (Mobile) */
-  --body-4-font-family: 'Source Sans Pro', sans-serif;
+  --body-4-font-family: var(--font-family-primary);
   --body-4-font-size: 14px;
   --body-4-line-height: 18px;
   --body-4-font-weight: 400;

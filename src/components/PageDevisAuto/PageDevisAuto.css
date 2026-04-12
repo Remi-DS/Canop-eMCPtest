@@ -10,8 +10,8 @@
   --color-progress-bg: #e2e2e2;
   --color-message-bg: #f5f5f5;
 
-  --font-body: 'Source Sans Pro', sans-serif;
-  --font-heading: 'Publico Headline', serif;
+  --font-body: var(--font-family-primary);
+  --font-heading: var(--font-family-primary);
 }
 
 /* ========================

@@ -9,7 +9,7 @@
   border: 1px solid;
   border-radius: var(--tag-border-radius);
   padding: 2px 8px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--font-family-primary);
   font-weight: 600;
   white-space: nowrap;
 }

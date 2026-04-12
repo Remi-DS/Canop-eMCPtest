@@ -6,7 +6,7 @@
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--font-family-primary);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;

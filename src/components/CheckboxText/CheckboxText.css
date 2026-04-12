@@ -32,7 +32,7 @@
 }
 
 .checkbox-text-label {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: var(--font-family-primary);
   font-weight: 400;
   color: var(--checkbox-text-label-color);
   margin: 0;
