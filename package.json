@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build --base /Canop-eMCPtest/"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^19.2.4",
