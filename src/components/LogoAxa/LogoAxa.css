@@ -1,0 +1,44 @@
+/* =====================
+   Logo AXA
+   ===================== */
+
+.ds-logo-axa {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ds-logo-axa__base {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* Variant Specifics */
+
+.ds-logo-axa--open-blue .ds-logo-axa__open-blue {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.ds-logo-axa--open-blue .ds-logo-axa__switch {
+  position: absolute;
+  top: 2.38%;
+  right: 2.38%;
+  width: 41.6%;
+  height: 47%;
+  z-index: 1;
+}
+
+.ds-logo-axa--wealth {
+  overflow: clip;
+}
+
+.ds-logo-axa--wealth .ds-logo-axa__wealth {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,78 @@
+/* =====================
+   Item Label
+   ===================== */
+
+.ds-item-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  max-width: 328px;
+  font-family: var(--font-family-primary);
+}
+
+.ds-item-label--modify {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ds-item-label__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ds-item-label__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 24px;
+}
+
+.ds-item-label__title {
+  color: var(--color-text-main, #333);
+  font-weight: var(--font-weight-semibold, 600);
+}
+
+.ds-item-label--desk .ds-item-label__title {
+  font-size: var(--font-size-lg, 18px);
+  line-height: 23px;
+}
+
+.ds-item-label--mob .ds-item-label__title {
+  font-size: var(--font-size-base, 16px);
+  line-height: 20px;
+}
+
+.ds-item-label__mandatory {
+  color: var(--color-error-base, #c91432);
+}
+
+.ds-item-label__description {
+  margin: 0;
+  color: var(--color-gray-600, #999);
+  font-weight: var(--font-weight-regular, 400);
+}
+
+.ds-item-label--desk .ds-item-label__description {
+  font-size: var(--font-size-base, 16px);
+  line-height: 20px;
+}
+
+.ds-item-label--mob .ds-item-label__description {
+  font-size: var(--font-size-sm, 14px);
+  line-height: 18px;
+}
+
+/* Specific button placements */
+.ds-item-label__info-btn {
+  text-decoration: none !important;
+  font-size: 14px !important;
+}
+
+.ds-item-label__modify-btn {
+  margin-bottom: 2px;
+}
