@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { ClickIcon } from './ClickIcon';
 
 const meta: Meta<typeof ClickIcon> = {
-  title: 'Atoms/Actions/Click Icon',
+  title: 'Atoms/Click Icon',
   component: ClickIcon,
   tags: ['autodocs'],
   argTypes: {

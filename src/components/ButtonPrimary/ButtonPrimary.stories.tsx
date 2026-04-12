@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { ButtonPrimary } from './ButtonPrimary';
 
 const meta: Meta<typeof ButtonPrimary> = {
-  title: 'Atoms/Actions/Button Primary',
+  title: 'Atoms/Button Primary',
   component: ButtonPrimary,
   tags: ['autodocs'],
   argTypes: {
