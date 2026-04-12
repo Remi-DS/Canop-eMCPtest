@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { PageDevisAuto } from './PageDevisAuto';
 
 const meta = {
-  title: 'Templates/PageDevisAuto',
+  title: 'Templates/Page Devis Auto',
   component: PageDevisAuto,
   tags: ['autodocs'],
   parameters: {

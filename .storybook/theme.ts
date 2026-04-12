@@ -6,7 +6,7 @@ export default create({
   // Branding
   brandTitle: 'Canopée B2C Test',
   brandUrl: 'https://www.axa.fr',
-  brandImage: 'http://localhost:3845/assets/920161dc35fa02bb87b1d6de0209f43a1c01cde7.svg',
+  brandImage: '/assets/logo-axa-solid-blue.svg',
   brandTarget: '_self',
 
   // UI colors

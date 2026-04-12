@@ -2,12 +2,13 @@ import React from 'react';
 import './LogoAxa.css';
 
 // SVG assets from Figma
+// SVG assets from Figma (relocated to public/assets for deployment)
 const ASSETS = {
-  SOLID_BLUE: "http://localhost:3845/assets/920161dc35fa02bb87b1d6de0209f43a1c01cde7.svg",
-  OPEN_BLUE: "http://localhost:3845/assets/57d477173c087d11b7e0c5d94b6baa56a0589106.svg",
-  OPEN_WHITE: "http://localhost:3845/assets/c90a69b22d68d016208dbc76b703e840973daf05.svg",
-  SWITCH: "http://localhost:3845/assets/747769b8befff13c827cb3cd46483dabd0e16657.svg",
-  WEALTH_INNER: "http://localhost:3845/assets/54784bff79388bc99b1d994755f9795409e9bbac.svg"
+  SOLID_BLUE: "/assets/logo-axa-solid-blue.svg",
+  OPEN_BLUE: "/assets/logo-axa-open-blue.svg",
+  OPEN_WHITE: "/assets/logo-axa-open-white.svg",
+  SWITCH: "/assets/logo-axa-switch.svg",
+  WEALTH_INNER: "/assets/logo-axa-wealth-inner.svg"
 };
 
 export interface LogoAxaProps {

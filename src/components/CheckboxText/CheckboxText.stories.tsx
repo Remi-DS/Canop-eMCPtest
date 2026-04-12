@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { CheckboxText } from './CheckboxText';
 
 const meta = {
-  title: 'Molecules/CheckboxText',
+  title: 'Molecules/Checkbox Text',
   component: CheckboxText,
   tags: ['autodocs'],
   argTypes: {

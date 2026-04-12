@@ -54,9 +54,10 @@
   /* =====================
      ÉTATS & SEMANTIQUE
      ===================== */
-  --color-error-base: #c91432;
-  --color-error-hover: #a51029;
-  --color-success-base: #14c95a;
+  --color-error-base: #e50000;
+  --color-error-hover: #c91432;
+  --color-success-base: #188038;
+  --color-warning-base: #c94e14;
   
   /* =====================
      OMBRES ET RADIUS
