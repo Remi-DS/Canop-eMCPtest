@@ -1,5 +1,5 @@
 /* =====================
-   Icon Atom
+   Icon Atom (Corrected)
    ===================== */
 
 .ds-icon {
@@ -24,7 +24,7 @@
 }
 
 /* ========================
-   SIZES
+   SIZES (Figma Exacts)
    ======================== */
 
 .ds-icon--xs { width: 32px; height: 32px; padding: 8px; }
@@ -48,8 +48,8 @@
   padding: 0 !important;
 }
 
-/* Prospect = Round, Client = Rounded Square */
-.ds-icon--prospect { border-radius: 50%; }
+/* Prospect = Round (44px), Client = Rounded Square (12px) */
+.ds-icon--prospect { border-radius: 44px; }
 .ds-icon--client   { border-radius: 12px; }
 
 /* ========================
@@ -65,6 +65,7 @@
 /* Secondary */
 .ds-icon--with-bg.ds-icon--secondary {
   background-color: var(--color-gray-100, #f5f5fb);
+  border: 1px solid var(--color-gray-200, #ebebf6);
   color: var(--color-primary-base, #00008f);
 }
 
@@ -76,7 +77,7 @@
 
 /* Error */
 .ds-icon--with-bg.ds-icon--error {
-  background-color: var(--color-error-base, #c91432);
+  background-color: #e50000; /* Figma exact */
   color: white;
 }
 
@@ -88,7 +89,7 @@
 
 /* Disabled */
 .ds-icon--with-bg.ds-icon--disabled {
-  background-color: var(--color-gray-200, #ebebf6);
+  background-color: #f5f5f5; /* Figma exact */
   color: var(--color-gray-600, #999999);
 }
 
@@ -98,6 +99,6 @@
 
 .ds-icon--without-bg.ds-icon--primary   { color: var(--color-primary-base, #00008f); }
 .ds-icon--without-bg.ds-icon--success   { color: var(--color-success-base, #188038); }
-.ds-icon--without-bg.ds-icon--error     { color: var(--color-error-base, #c91432); }
+.ds-icon--without-bg.ds-icon--error     { color: #e50000; }
 .ds-icon--without-bg.ds-icon--warning   { color: var(--color-business-base, #c94e14); }
 .ds-icon--without-bg.ds-icon--disabled  { color: var(--color-gray-600, #999999); }
