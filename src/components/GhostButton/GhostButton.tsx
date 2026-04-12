@@ -12,6 +12,7 @@ export interface GhostButtonProps {
   label?: string;
   iconLeft?: boolean;
   iconRight?: boolean;
+  iconSrc?: string;
   onClick?: () => void;
   className?: string;
 }
@@ -23,6 +24,7 @@ export const GhostButton: React.FC<GhostButtonProps> = ({
   label = 'Lien',
   iconLeft = false,
   iconRight = false,
+  iconSrc,
   onClick,
   className = '',
 }) => {
@@ -44,9 +46,16 @@ export const GhostButton: React.FC<GhostButtonProps> = ({
       onClick={onClick}
       type="button"
     >
-      {iconLeft && <span className="ghost-btn__icon" aria-hidden="true">←</span>}
-      <span className="ghost-btn__label">{label}</span>
-      {iconRight && <span className="ghost-btn__icon" aria-hidden="true">→</span>}
+      <div className="ghost-btn__container">
+        {iconSrc ? (
+          <img src={iconSrc} alt="" className="ghost-btn__custom-icon" />
+        ) : (
+          iconLeft && <span className="ghost-btn__icon" aria-hidden="true">←</span>
+        )}
+        <span className="ghost-btn__label">{label}</span>
+        {iconRight && <span className="ghost-btn__icon" aria-hidden="true">→</span>}
+      </div>
+      {theme === 'Prospect' && <div className="ghost-btn__bar" />}
     </button>
   );
 };

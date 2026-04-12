@@ -35,17 +35,17 @@ export const ItemLabel: React.FC<ItemLabelProps> = ({
     <div className={`ds-item-label ds-item-label--${deviceClass} ds-item-label--${styleClass} ds-item-label--${themeClass} ${className}`}>
       <div className="ds-item-label__content">
         <div className="ds-item-label__header">
-          <span className="ds-item-label__title">
-            {label}
-            {champObligatoire && <span className="ds-item-label__mandatory"> *</span>}
-          </span>
+          <div className="ds-item-label__title-group">
+            <span className="ds-item-label__title">{label}</span>
+            {champObligatoire && <span className="ds-item-label__mandatory">*</span>}
+          </div>
           
           {style === '--default' && afficherLienInfo && (
             <GhostButton 
               theme={theme} 
               device={device} 
               label="En savoir plus" 
-              iconLeft 
+              iconSrc="/assets/info-outline.svg"
               onClick={onActionClick}
               className="ds-item-label__info-btn"
             />
@@ -58,13 +58,15 @@ export const ItemLabel: React.FC<ItemLabelProps> = ({
       </div>
 
       {style === '--modify' && (
-        <GhostButton 
-          theme={theme} 
-          device={device} 
-          label="Modifier" 
-          onClick={onActionClick}
-          className="ds-item-label__modify-btn"
-        />
+        <div className="ds-item-label__actions">
+          <GhostButton 
+            theme={theme} 
+            device={device} 
+            label="Modifier" 
+            onClick={onActionClick}
+            className="ds-item-label__modify-btn"
+          />
+        </div>
       )}
     </div>
   );

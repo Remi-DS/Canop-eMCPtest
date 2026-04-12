@@ -4,65 +4,59 @@
 
 .ghost-btn {
   display: inline-flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  gap: 4px;
   cursor: pointer;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
   background: transparent;
   border: none;
-  outline: none;
-  box-sizing: border-box;
   padding: 0;
+  outline: none;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-semibold);
+  transition: all 0.2s ease;
 }
 
-/* Desktop */
-.ghost-btn--desk {
+.ghost-btn__container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 24px;
+}
+
+.ghost-btn__label {
+  white-space: nowrap;
+}
+
+.ghost-btn__custom-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.ghost-btn__bar {
+  height: 1px;
+  width: 100%;
+  background-color: currentColor;
+  margin-top: -1px;
+}
+
+/* Themes colors */
+.ghost-btn--prospect {
+  color: var(--color-primary-base, #00008f);
+}
+
+.ghost-btn--client {
+  color: var(--color-primary-base, #00008f);
+}
+
+/* Sizes */
+.ghost-btn--desk .ghost-btn__label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.ghost-btn--mob .ghost-btn__label {
   font-size: 16px;
   line-height: 20px;
-  height: 24px;
-}
-
-/* Mobile */
-.ghost-btn--mob {
-  font-size: 14px;
-  line-height: 20px;
-  height: 24px;
-}
-
-/* ========================
-   PROSPECT
-   ======================== */
-.ghost-btn--prospect.ghost-btn--default {
-  color: var(--actions\/link\/default\/text-default, #00008f);
-}
-.ghost-btn--prospect.ghost-btn--hover {
-  color: var(--actions\/link\/default\/text-hover, #000072);
-  cursor: pointer;
-}
-.ghost-btn--prospect.ghost-btn--active {
-  color: var(--actions\/link\/default\/text-active, #3333a5);
-}
-
-/* ========================
-   CLIENT
-   ======================== */
-.ghost-btn--client.ghost-btn--default {
-  color: var(--actions\/link\/default\/text-default, #00008f);
-}
-.ghost-btn--client.ghost-btn--hover {
-  color: var(--actions\/link\/default\/text-hover, #000072);
-  cursor: pointer;
-}
-.ghost-btn--client.ghost-btn--active {
-  color: var(--actions\/link\/default\/text-active, #3333a5);
-}
-
-.ghost-btn__icon {
-  font-size: 12px;
-  flex-shrink: 0;
 }

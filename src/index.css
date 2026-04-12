@@ -152,6 +152,10 @@
   --actions\/icon\/prospect\/active\/background: var(--color-primary-active);
   
   --actions\/icon\/client\/default\/background: var(--color-primary-base);
+
+  /* Item Label */
+  --atomes\/item-label\/title: #333333;
+  --atomes\/item-label\/subtitle: #5c5c5c;
 }
 
 /* ==========================================================================
