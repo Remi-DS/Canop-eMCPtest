@@ -1,0 +1,1 @@
+:root{--divider-color-prospect:#cccce9;--divider-color-client:#cccce9}.divider{background:var(--divider-color-prospect);flex-shrink:0}.divider--prospect{background:var(--divider-color-prospect)}.divider--client{background:var(--divider-color-client)}.divider--horizontal{width:100%;height:1px;max-height:1px}.divider--vertical{width:1px;max-width:1px;height:42px}

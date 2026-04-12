@@ -1,0 +1,1 @@
+:root{--tag-border-radius:4px}.tag{border-radius:var(--tag-border-radius);white-space:nowrap;border:1px solid;justify-content:center;align-items:center;padding:2px 8px;font-family:Source Sans Pro,sans-serif;font-weight:600;display:inline-flex}.tag--desk{height:24px;font-size:16px;line-height:20px}.tag--mob{height:22px;font-size:14px;line-height:18px}
