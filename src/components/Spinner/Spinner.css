@@ -1,5 +1,5 @@
 /* ==========================================================================
-   SPINNER COMPONENT
+   SPINNER COMPONENT (CORRECTION PIXEL PERFECT)
    ========================================================================== */
 
 .axa-spinner {
@@ -9,59 +9,80 @@
   animation: axa-spinner-rotate 0.8s linear infinite;
 }
 
-/* SIZES */
-.axa-spinner--sm {
+/* SIZES (Exact names from Figma) */
+.axa-spinner----24 {
   width: 24px;
   height: 24px;
 }
 
-.axa-spinner--md {
+.axa-spinner----32 {
   width: 32px;
   height: 32px;
 }
 
-.axa-spinner--lg {
+.axa-spinner----40 {
   width: 40px;
   height: 40px;
 }
 
-/* THEMES / VARIANTS */
+/* THEMES STRUCTURES */
 .axa-spinner svg {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.axa-spinner__bg {
+/* Theme: Prospect (Simple Stroke Circle) */
+.axa-spinner--theme-Prospect .axa-spinner__bg {
+  stroke-width: 3;
   stroke-opacity: 0.2;
 }
 
-/* Prospect: Thinner, specific stroke */
-.axa-spinner--theme-prospect .axa-spinner__bg,
-.axa-spinner--theme-prospect .axa-spinner__path {
+.axa-spinner--theme-Prospect .axa-spinner__path {
   stroke-width: 3;
 }
 
-/* Client: Thicker stroke */
-.axa-spinner--theme-client .axa-spinner__bg,
-.axa-spinner--theme-client .axa-spinner__path {
-  stroke-width: 4;
+/* Theme: Client (Filled Ring / Donut) */
+.axa-spinner--theme-Client .axa-spinner__bg {
+  fill-opacity: 0.2;
 }
 
-/* COLORS */
-.axa-spinner--color-primary .axa-spinner__bg,
-.axa-spinner--color-primary .axa-spinner__path {
+.axa-spinner--theme-Client .axa-spinner__path {
+  /* For Client, the "path" is a fill shape from imgSpin, but we use it as a path/fill segment */
+  stroke-width: 2; /* Based on curved segment stroke in Figma data */
+}
+
+/* COLORS (Exact names from Figma) */
+/* Prospect Colors (Strokes) */
+.axa-spinner--theme-Prospect.axa-spinner--color---primary .axa-spinner__bg,
+.axa-spinner--theme-Prospect.axa-spinner--color---primary .axa-spinner__path {
   stroke: var(--color-primary-base, #00008f);
 }
 
-.axa-spinner--color-secondary .axa-spinner__bg,
-.axa-spinner--color-secondary .axa-spinner__path {
+.axa-spinner--theme-Prospect.axa-spinner--color---secondary .axa-spinner__bg,
+.axa-spinner--theme-Prospect.axa-spinner--color---secondary .axa-spinner__path {
   stroke: var(--color-gray-500, #cccccc);
 }
 
-.axa-spinner--color-inverse .axa-spinner__bg,
-.axa-spinner--color-inverse .axa-spinner__path {
+.axa-spinner--theme-Prospect.axa-spinner--color---tertiary .axa-spinner__bg,
+.axa-spinner--theme-Prospect.axa-spinner--color---tertiary .axa-spinner__path {
   stroke: var(--color-neutral-white, #ffffff);
+}
+
+/* Client Colors (Fills) */
+.axa-spinner--theme-Client.axa-spinner--color---primary .axa-spinner__bg,
+.axa-spinner--theme-Client.axa-spinner--color---primary .axa-spinner__path {
+  fill: var(--color-primary-base, #00008f);
+}
+
+.axa-spinner--theme-Client.axa-spinner--color---secondary .axa-spinner__bg,
+.axa-spinner--theme-Client.axa-spinner--color---secondary .axa-spinner__path {
+  fill: var(--color-gray-500, #cccccc);
+}
+
+.axa-spinner--theme-Client.axa-spinner--color---tertiary .axa-spinner__bg,
+.axa-spinner--theme-Client.axa-spinner--color---tertiary .axa-spinner__path {
+  fill: var(--color-neutral-white, #ffffff);
 }
 
 /* ANIMATION */

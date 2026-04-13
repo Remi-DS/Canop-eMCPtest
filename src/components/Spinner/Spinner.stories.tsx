@@ -8,15 +8,19 @@ const meta: Meta<typeof Spinner> = {
   argTypes: {
     theme: {
       control: 'select',
-      options: ['prospect', 'client'],
+      options: ['Prospect', 'Client'],
     },
     size: {
       control: 'select',
-      options: ['sm', 'md', 'lg'],
+      options: ['--24', '--32', '--40'],
     },
     color: {
       control: 'select',
-      options: ['primary', 'secondary', 'inverse'],
+      options: ['--primary', '--secondary', '--tertiary'],
+    },
+    animation: {
+      control: 'select',
+      options: ['1', '2', '3', '4'],
     },
   },
   parameters: {
@@ -27,35 +31,35 @@ const meta: Meta<typeof Spinner> = {
 export default meta;
 type Story = StoryObj<typeof Spinner>;
 
-export const Default: Story = {
+export const DefaultProspect: Story = {
   args: {
-    theme: 'prospect',
-    size: 'md',
-    color: 'primary',
+    theme: 'Prospect',
+    size: '--40',
+    color: '--primary',
   },
 };
 
 export const ClientTheme: Story = {
   args: {
-    theme: 'client',
-    size: 'lg',
-    color: 'primary',
+    theme: 'Client',
+    size: '--32',
+    color: '--primary',
   },
 };
 
 export const Secondary: Story = {
   args: {
-    theme: 'prospect',
-    size: 'md',
-    color: 'secondary',
+    theme: 'Prospect',
+    size: '--24',
+    color: '--secondary',
   },
 };
 
-export const Inverse: Story = {
+export const InverseOnBlue: Story = {
   args: {
-    theme: 'prospect',
-    size: 'lg',
-    color: 'inverse',
+    theme: 'Client',
+    size: '--40',
+    color: '--tertiary',
   },
   decorators: [
     (Story) => (
@@ -66,12 +70,21 @@ export const Inverse: Story = {
   ],
 };
 
-export const AllSizes: Story = {
-  render: (args) => (
-    <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
-      <Spinner {...args} size="sm" />
-      <Spinner {...args} size="md" />
-      <Spinner {...args} size="lg" />
+export const AllThemesAndSizes: Story = {
+  render: () => (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+      <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+        <span>Prospect:</span>
+        <Spinner theme="Prospect" size="--24" />
+        <Spinner theme="Prospect" size="--32" />
+        <Spinner theme="Prospect" size="--40" />
+      </div>
+      <div style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>
+        <span>Client:</span>
+        <Spinner theme="Client" size="--24" />
+        <Spinner theme="Client" size="--32" />
+        <Spinner theme="Client" size="--40" />
+      </div>
     </div>
   ),
 };
