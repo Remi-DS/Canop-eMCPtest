@@ -1,0 +1,75 @@
+/* ==========================================================================
+   SPINNER COMPONENT
+   ========================================================================== */
+
+.axa-spinner {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0;
+  animation: axa-spinner-rotate 0.8s linear infinite;
+}
+
+/* SIZES */
+.axa-spinner--sm {
+  width: 24px;
+  height: 24px;
+}
+
+.axa-spinner--md {
+  width: 32px;
+  height: 32px;
+}
+
+.axa-spinner--lg {
+  width: 40px;
+  height: 40px;
+}
+
+/* THEMES / VARIANTS */
+.axa-spinner svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.axa-spinner__bg {
+  stroke-opacity: 0.2;
+}
+
+/* Prospect: Thinner, specific stroke */
+.axa-spinner--theme-prospect .axa-spinner__bg,
+.axa-spinner--theme-prospect .axa-spinner__path {
+  stroke-width: 3;
+}
+
+/* Client: Thicker stroke */
+.axa-spinner--theme-client .axa-spinner__bg,
+.axa-spinner--theme-client .axa-spinner__path {
+  stroke-width: 4;
+}
+
+/* COLORS */
+.axa-spinner--color-primary .axa-spinner__bg,
+.axa-spinner--color-primary .axa-spinner__path {
+  stroke: var(--color-primary-base, #00008f);
+}
+
+.axa-spinner--color-secondary .axa-spinner__bg,
+.axa-spinner--color-secondary .axa-spinner__path {
+  stroke: var(--color-gray-500, #cccccc);
+}
+
+.axa-spinner--color-inverse .axa-spinner__bg,
+.axa-spinner--color-inverse .axa-spinner__path {
+  stroke: var(--color-neutral-white, #ffffff);
+}
+
+/* ANIMATION */
+@keyframes axa-spinner-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
