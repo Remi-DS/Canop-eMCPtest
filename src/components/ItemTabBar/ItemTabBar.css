@@ -13,7 +13,7 @@
   cursor: pointer;
   padding: 16px;
   transition: all 0.2s ease-in-out;
-  font-family: var(--font-family-primary);
+  font-family: Arial, sans-serif;
   text-align: center;
   min-width: 90px;
 }
