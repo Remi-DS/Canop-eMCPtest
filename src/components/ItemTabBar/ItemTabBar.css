@@ -1,0 +1,71 @@
+/* ==========================================================================
+   ITEM TAB BAR COMPONENT
+   ========================================================================== */
+
+.axa-item-tab-bar {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid transparent; /* Reserve space for border to avoid jump */
+  cursor: pointer;
+  padding: 16px;
+  transition: all 0.2s ease-in-out;
+  font-family: var(--font-family-primary);
+  text-align: center;
+  min-width: 90px;
+}
+
+/* THEMES */
+.axa-item-tab-bar--theme-Prospect {
+  color: var(--color-primary-base, #00008f);
+}
+
+.axa-item-tab-bar--theme-Client {
+  color: var(--color-text-main, #333333);
+}
+
+/* SIZES / DEVICES */
+.axa-item-tab-bar--desk {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.axa-item-tab-bar--mob {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 8px;
+}
+
+/* STATES */
+.axa-item-tab-bar--state-default {
+  border-bottom: 1px solid var(--color-gray-200, #cccce9);
+  padding-bottom: 19px; /* Compensate for the thinner border to keep consistent height */
+}
+
+.axa-item-tab-bar--mob.axa-item-tab-bar--state-default {
+   padding-bottom: 13px;
+}
+
+.axa-item-tab-bar--state-hover,
+.axa-item-tab-bar:hover {
+  border-bottom-color: var(--color-gray-200, #cccce9);
+  color: var(--color-primary-base, #00008f);
+}
+
+.axa-item-tab-bar--state-selected {
+  border-bottom-color: var(--color-primary-base, #00008f);
+  color: var(--color-primary-base, #00008f);
+  font-weight: var(--font-weight-semibold, 600);
+}
+
+/* Theme Client has specific text colors for default/hover */
+.axa-item-tab-bar--theme-Client.axa-item-tab-bar--state-default {
+  color: var(--color-text-main, #333333);
+}
+
+.axa-item-tab-bar--theme-Client.axa-item-tab-bar--state-selected {
+  color: var(--color-primary-base, #00008f);
+}
